@@ -1,9 +1,10 @@
 <?php
 
+//Put the script inside the <head> tag
 add_action('wp_head','ie_explorer', 20);
 function ie_explorer() {
 ?>
-<!-- Se l'utente utilizza Internet Explorer lo invita ad aggiornare il browser -->
+<!-- If the user use Internet Explorer notify him, change the string of the text message-->
 <script> 
 	var $buoop = {required:{e:-4}, reminder: 0, text: "Questo sito non supporta Internet Explorer. La preghiamo di effettuare gli ordini attraverso un altro browser (ad es. Chrome, Safari o Edge)", noclose:true, insecure:true, style:"corner",api:2021.01 }; 
 	function $buo_f(){ 
